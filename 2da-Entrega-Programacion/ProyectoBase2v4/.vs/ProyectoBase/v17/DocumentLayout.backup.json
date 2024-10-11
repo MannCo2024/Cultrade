@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\lab5\\downloads\\borraameeeeeeee\\2da-entrega-programacion\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\lab5\\downloads\\borraameeeeeeee\\2da-entrega-programacion\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmcrearpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmcrearpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 186,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Post.cs",
+              "ToolTip": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeToolTip": "ProyectoBase\\Post.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwMMAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T11:28:34.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCrearPost.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmCrearPost.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmCrearPost.cs",
+              "ToolTip": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmCrearPost.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBase\\frmCrearPost.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T11:21:38.227Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
