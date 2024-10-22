@@ -23,11 +23,10 @@ namespace ProyectoBase
                 + "left join Video v ON p.id_post = v.id_post "
                 + "left join Imagen i ON p.id_post = i.id_post "
                 + "where pub.id_usuario " + usu;
-            if (Program.con.CheckConn() == true)
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
+                Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
             }
-            Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
             rs = Program.cn.Execute(sql, out Program.dump);
 
             for (int i = 0; i < rs.Fields.Count; i++)
@@ -45,9 +44,6 @@ namespace ProyectoBase
                 dt.Rows.Add(row);
                 rs.MoveNext();
             }
-
-
-
             return dt;
         }
 
@@ -57,21 +53,24 @@ namespace ProyectoBase
             ADODB.Recordset rs;
             String sql;
             sql = "SELECT COUNT(*) as Likes FROM Reacciona WHERE id_post = '" + post + "' AND reaccion = 'corazon'; ";
-            if (Program.con.CheckConn() == true)
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
+                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
+                Likes = "Err01";
             }
-            Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
-            rs = Program.cn.Execute(sql, out Program.dump);
-
-
-            if (!rs.EOF)
+            else
             {
-                Likes = rs.Fields["Likes"].Value.ToString();
-            }
-            else Likes = "0";
+                rs = Program.cn.Execute(sql, out Program.dump);
 
+
+                if (!rs.EOF)
+                {
+                    Likes = rs.Fields["Likes"].Value.ToString();
+                }
+                else Likes = "0";
+            }
             return Likes;
+
         }
 
         public Boolean IsLiked(string post) 
@@ -79,19 +78,22 @@ namespace ProyectoBase
             ADODB.Recordset rs;
             String sql;
             sql = "select * from Reacciona where id_post = '" + post + "' AND id_usuario = '" + Program.userid + "'";
-            if (Program.con.CheckConn() == true)                        //MUCHA REPETICION, PARA ARREGLAR ANTES DE 3RA ENTREGA SI SE LLEGA
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
+                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
+                return false;
             }
-            Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
-            rs = Program.cn.Execute(sql, out Program.dump);
+            else
+            {
+                rs = Program.cn.Execute(sql, out Program.dump);
 
-            if (!rs.EOF)
-            {
-                //Usuario dio like
-                return true;
+                if (!rs.EOF)
+                {
+                    //Usuario dio like
+                    return true;
+                }
+                else return false;
             }
-            else return false;
         }
 
 
@@ -102,11 +104,10 @@ namespace ProyectoBase
             ADODB.Recordset rs;
             String sql;
             sql = "SELECT u.id_usuario AS Usuario, c.id_post AS Post, c.comentario AS Comentario FROM Comenta c JOIN Usuario u ON c.id_usuario = u.id_usuario WHERE c.id_post = '" + post + "'";
-            if (Program.con.CheckConn() == true)
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
+                MessageBox.Show("Error: La sesión ha sido cerrada.");
             }
-            Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
             rs = Program.cn.Execute(sql, out Program.dump);
 
             for (int i = 0; i < rs.Fields.Count; i++)
@@ -124,7 +125,6 @@ namespace ProyectoBase
                 dt.Rows.Add(row);
                 rs.MoveNext();
             }
-            Program.con.CCon();
             return dt;
         }
 
@@ -161,43 +161,43 @@ namespace ProyectoBase
 
         }
 
-        public void crearPost(string texto, string img) {
+        public void crearPost(string texto, string img) { // SI EL USUARIO TIENE LOS PRIVILEGIOS DE INSERT EN POST Y PUBLICA, DEBERÍA DE PODER CREAR UN POST CON SU USUARIO.
             string sql;
             string postid;
-            if (Program.con.CheckConn() == true)
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
-                Program.con.OpConn("PostMaker", "Xkjjk)923=!1f");
+                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
             }
-            else Program.con.OpConn("PostMaker", "Xkjjk)923=!1f");
+            else {
 
-            sql = "insert into Post(modificado, texto) values(false,'" + texto + "')";
-            Program.cn.Execute(sql, out Program.dump);
+                sql = "insert into Post(modificado, texto) values(false,'" + texto + "')";
+                Program.cn.Execute(sql, out Program.dump);
 
-            sql = "select id_post from Post where id_post = LAST_INSERT_ID()";
-            postid = Program.RsAString(Program.cn.Execute(sql, out Program.dump));
+                sql = "select id_post from Post where id_post = LAST_INSERT_ID()";
+                postid = Program.RsAString(Program.cn.Execute(sql, out Program.dump));
 
-            sql = "insert into Imagen(id_post, datapath) values(" + postid + ", '" + img +"')";
-            Program.cn.Execute(sql, out Program.dump);
+                sql = "insert into Imagen(id_post, datapath) values(" + postid + ", '" + img + "')";
+                Program.cn.Execute(sql, out Program.dump);
 
-            sql = "insert into Publica(id_usuario, id_post, fechaCreacion) values('" + Program.userid + "', '" + postid + "', NOW())";
-            Program.cn.Execute(sql, out Program.dump);
+                sql = "insert into Publica(id_usuario, id_post, fechaCreacion) values('" + Program.userid + "', '" + postid + "', NOW())";
+                Program.cn.Execute(sql, out Program.dump);
+            }
         }
 
         public void CrearCom(string texto, string post) {
             string sql;
-            if (Program.con.CheckConn() == true)
+            if (!Program.con.CheckConn())
             {
-                Program.cn.Close();
-                Program.con.OpConn("PostMaker", "Xkjjk)923=!1f");
+                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
             }
-            else Program.con.OpConn("PostMaker", "Xkjjk)923=!1f");
-
-            sql = "insert into Comenta(id_usuario, id_post, fecha, comentario) values('" + Program.userid +"', '" + post + "', NOW(),'" + texto + "')";
-            Program.cn.Execute(sql, out Program.dump);
+            else
+            {
+                sql = "insert into Comenta(id_usuario, id_post, fecha, comentario) values('" + Program.userid + "', '" + post + "', NOW(),'" + texto + "')";
+                Program.cn.Execute(sql, out Program.dump);
+            }
         }
         public void LikePost(string post) { 
-            //ASFAFSDHGJFHKDGJHKGJDFHGKJDHFGKSJHDFSHGJFHDKGJGHKDFHGKDSFHKJGHGKJSDF
+            // Falta hacer
         }
 
         public void CargarComs(string postid) {

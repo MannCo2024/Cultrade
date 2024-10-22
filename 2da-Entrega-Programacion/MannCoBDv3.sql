@@ -1,4 +1,4 @@
-DROP DATABASE BD;
+#DROP DATABASE BD;
 CREATE DATABASE BD;
 USE BD;
 -- show engine innodb status;

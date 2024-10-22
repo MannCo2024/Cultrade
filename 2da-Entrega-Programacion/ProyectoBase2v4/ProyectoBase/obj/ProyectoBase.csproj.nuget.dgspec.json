@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {}
+    "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {
+    "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+        "projectUniqueName": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
         "projectName": "ProyectoBase",
-        "projectPath": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
-        "packagesPath": "C:\\Users\\Lab5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\obj\\",
+        "projectPath": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+        "packagesPath": "C:\\Users\\MannC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lab5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MannC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +66,7 @@
               "version": "[2.0.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

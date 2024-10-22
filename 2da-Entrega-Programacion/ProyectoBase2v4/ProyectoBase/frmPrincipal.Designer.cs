@@ -226,7 +226,7 @@ namespace ProyectoBase
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(74, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 50;
             this.label1.Text = "Invitado";
             // 
@@ -411,7 +411,7 @@ namespace ProyectoBase
             this.lblUsuario.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblUsuario.Location = new System.Drawing.Point(74, 20);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(105, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(104, 16);
             this.lblUsuario.TabIndex = 49;
             this.lblUsuario.Text = "NombreUsuario";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
@@ -494,6 +494,7 @@ namespace ProyectoBase
             this.MinimumSize = new System.Drawing.Size(880, 504);
             this.Name = "frmPrincipal";
             this.ShowIcon = false;
+            this.Activated += new System.EventHandler(this.frmPrincipal_Activated);
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.SizeChanged += new System.EventHandler(this.frmPrincipal_SizeChanged);
             this.Resize += new System.EventHandler(this.frmPrincipal_Resize);

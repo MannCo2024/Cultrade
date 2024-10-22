@@ -95,7 +95,6 @@ namespace ProyectoBase
                     try
                     {
                         Program.con.OpConn(usu, pass);
-                        MessageBox.Show(Program.cn.State.ToString());
                         Program.frmLogin.Dispose();
                     }
                     catch (Exception)
@@ -105,8 +104,8 @@ namespace ProyectoBase
                 }
                 else
                 {
+                    MessageBox.Show("Usuario o contraseña Incorrectos");      //Anteriormente era "Usuario ingresado no existe"
                     Program.cn.Close();
-                    MessageBox.Show("El usuario ingresado no existe");      //Cambiar el texto para que no sea tan informativo
                 }
             }
             else { 

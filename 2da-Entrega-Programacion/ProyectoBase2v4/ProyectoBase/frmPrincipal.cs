@@ -11,6 +11,8 @@ namespace ProyectoBase
         {
             InitializeComponent();
         }
+        Post pst = new Post();
+        Conexion con = new Conexion();
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -40,8 +42,8 @@ namespace ProyectoBase
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            Program.pst.CargarPost();
-            if (Program.con.CheckConn() == false)
+            pst.CargarPost();
+            if (con.CheckConn() == false)
             {
                 pnlInvitado.Enabled = true;
                 pnlInvitado.Visible = true;
@@ -52,20 +54,21 @@ namespace ProyectoBase
         private void btnIS_Click(object sender, EventArgs e)
         {
             Program.frmLogin = new frmLogin();
+            Program.cn.Close();
             Program.frmLogin.ShowDialog();
-            if (Program.con.CheckConn() == true)
+            if (con.CheckConn() == true)
             {
                 pnlInvitado.Hide();
                 pnlInvitado.Enabled = false;
-                Program.pst.CargarPost();
                 lblUsuario.Text = Program.userid;
-                this.Focus();
             }
+            this.Focus();
+            pst.CargarPost();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            Program.pst.CargarPost();
+            pst.CargarPost();
         }
 
         private void btnNotificaciones_Click(object sender, EventArgs e)
@@ -101,7 +104,7 @@ namespace ProyectoBase
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.pst.CargarPost();
+            pst.CargarPost();
         }
 
         private void LogoApp_Click(object sender, EventArgs e)
@@ -124,24 +127,35 @@ namespace ProyectoBase
 
         private void frmPrincipal_Resize(object sender, EventArgs e)
         {
-            if (Program.con.CheckConn() == false)
+            if (con.CheckConn() == false)
             {
                 pnlInvitado.Enabled = true;
                 pnlInvitado.Visible = true;
                 lblUsuario.Text = Program.userid;
             }
-            Program.pst.CargarPost();
+            pst.CargarPost();
         }
 
         private void frmPrincipal_SizeChanged(object sender, EventArgs e)
         {
-            if (Program.con.CheckConn() == false)
+            if (con.CheckConn() == false)
             {
                 pnlInvitado.Enabled = true;
                 pnlInvitado.Visible = true;
                 lblUsuario.Text = Program.userid;
             }
-            Program.pst.CargarPost();
+            pst.CargarPost();
+        }
+
+        private void frmPrincipal_Activated(object sender, EventArgs e)
+        {
+            if (con.CheckConn() == false)
+            {
+                pnlInvitado.Enabled = true;
+                pnlInvitado.Visible = true;
+                lblUsuario.Text = Program.userid;
+            }
+            pst.CargarPost();
         }
     }
 }

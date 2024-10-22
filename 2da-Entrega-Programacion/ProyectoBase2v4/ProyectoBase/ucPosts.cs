@@ -95,6 +95,7 @@ namespace ProyectoBase
             ucPosts.CargImg = guna2PictureBox1.Image;
             ucPosts.CargarTxt = txtTexto.Text;
             ucPosts.cargarUsu = lblUsu.Text;
+            ucPosts.cargarLikes = lblLikes.Text;
             ucPosts.Dock = DockStyle.Fill;
             Program.frmPost = new frmPost();
             Program.frmPost.splitContainer2.Panel1.Controls.Add(ucPosts);
