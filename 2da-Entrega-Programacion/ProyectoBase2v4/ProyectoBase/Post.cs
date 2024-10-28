@@ -17,12 +17,7 @@ namespace ProyectoBase
             DataTable dt = new DataTable();
             ADODB.Recordset rs;
             String sql;
-            sql = "select pub.id_usuario as 'Usuario', p.id_post as 'Post', p.texto as 'Texto', i.datapath as 'Imagen', v.id_video as 'Video', p.modificado as 'Modificado' "
-                + "from Post p "
-                + "join Publica pub ON p.id_post = pub.id_post "
-                + "left join Video v ON p.id_post = v.id_post "
-                + "left join Imagen i ON p.id_post = i.id_post "
-                + "where pub.id_usuario " + usu;
+            sql = "select * from verposts where Usuario " + usu;    // AL CREAR EL VIEW VERPOSTS, EL USURAIO YA NO TIENE QUE UTILIZAR PERMISOS EN TODAS LAS TABLAS, SOLAMENTE EN EL VIEW, LO MISMO VA PARA LA CREACIÓN DE POSTS CREO
             if (!Program.con.CheckConn())
             {
                 Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
@@ -103,7 +98,7 @@ namespace ProyectoBase
             DataTable dt = new DataTable();
             ADODB.Recordset rs;
             String sql;
-            sql = "SELECT u.id_usuario AS Usuario, c.id_post AS Post, c.comentario AS Comentario FROM Comenta c JOIN Usuario u ON c.id_usuario = u.id_usuario WHERE c.id_post = '" + post + "'";
+            sql = "SELECT * from verposts WHERE Post = '" + post + "'";
             if (!Program.con.CheckConn())
             {
                 MessageBox.Show("Error: La sesión ha sido cerrada.");
@@ -163,23 +158,13 @@ namespace ProyectoBase
 
         public void crearPost(string texto, string img) { // SI EL USUARIO TIENE LOS PRIVILEGIOS DE INSERT EN POST Y PUBLICA, DEBERÍA DE PODER CREAR UN POST CON SU USUARIO.
             string sql;
-            string postid;
             if (!Program.con.CheckConn())
             {
                 MessageBox.Show("Error: La sesión del usuario esta cerrada.");
             }
             else {
 
-                sql = "insert into Post(modificado, texto) values(false,'" + texto + "')";
-                Program.cn.Execute(sql, out Program.dump);
-
-                sql = "select id_post from Post where id_post = LAST_INSERT_ID()";
-                postid = Program.RsAString(Program.cn.Execute(sql, out Program.dump));
-
-                sql = "insert into Imagen(id_post, datapath) values(" + postid + ", '" + img + "')";
-                Program.cn.Execute(sql, out Program.dump);
-
-                sql = "insert into Publica(id_usuario, id_post, fechaCreacion) values('" + Program.userid + "', '" + postid + "', NOW())";
+                sql = "call creaPost('" + Program.userid + "', '" + texto +"', '" + img +"')";
                 Program.cn.Execute(sql, out Program.dump);
             }
         }

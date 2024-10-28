@@ -72,24 +72,24 @@ namespace ProyectoBase
 
         public void ValidoUsuario(String usu, String pass)
         {
-            if (Program.con.CheckConn() == false)
+            if (Program.con.CheckConn() == false)       //1
             {
-                ADODB.Recordset rs;
+                ADODB.Recordset rs;                     //2 CARGA DE VARIABLES
                 String sql;
 
-                try
+                try                                     //3 INTENTA ABRIR CONEXIÓN
                 {
                     Program.con.OpConn("UserCheck", "Xk9rr!23=!0A");
                 }
-                catch (Exception)
+                catch (Exception)                       //4 EN CASO DE FALLO
                 {
                     MessageBox.Show("Error al conectarse a la Base de Datos");
                 }
 
-                sql = "SELECT id_usuario FROM Usuario where id_usuario = '" + usu + "';";
-                rs = Program.cn.Execute(sql, out Program.dump);
-                Program.userid = usu;
-                if (!rs.EOF)
+                sql = "SELECT id_usuario FROM Usuario where id_usuario = '" + usu + "';";       //5 CARGA UNA SENTENCIA SQL
+                rs = Program.cn.Execute(sql, out Program.dump);                                 //6 EJECUTAR LA SENTENCIA
+                Program.userid = usu;                                                           //7 GUARDA EL NOMBRE DE USUARIO
+                if (!rs.EOF)                        //8
                 {
                     Program.cn.Close();
                     try

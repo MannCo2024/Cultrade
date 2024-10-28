@@ -8,10 +8,10 @@ namespace ProyectoBase
 {
     class Conexion {
         public Boolean CheckConn() {
-            if (Program.cn.State == 0) {
-                return false; //LA CONEXION ESTA CERRADA. MODO INVITADO.
+            if (Program.cn.State == 0) {                                      //1 
+                return false; //LA CONEXION ESTA CERRADA. MODO INVITADO.     //2
             }
-            return true; //CONEXION ABIERTA. CARGANDO DATOS.
+            return true; //CONEXION ABIERTA. CARGANDO DATOS.               //3
         }
 
         public void OpConn(String usu, String pass) {       //ABRIR CONEXION CON EL USUARIO Y CONSTRASEÑA INSERTADOS
