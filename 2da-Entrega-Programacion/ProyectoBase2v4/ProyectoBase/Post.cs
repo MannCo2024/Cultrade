@@ -11,18 +11,30 @@ namespace ProyectoBase
 {
     class Post
     {
+        Conexion con = new Conexion();
+        ADODB.Connection cn = new ADODB.Connection();
+        bool invitado = false;
 
-        public DataTable selectUserPosts(string usu) {
-
+        public DataTable selectUC(string post, string usu) {
             DataTable dt = new DataTable();
             ADODB.Recordset rs;
             String sql;
-            sql = "select * from verposts where Usuario " + usu;    // AL CREAR EL VIEW VERPOSTS, EL USURAIO YA NO TIENE QUE UTILIZAR PERMISOS EN TODAS LAS TABLAS, SOLAMENTE EN EL VIEW, LO MISMO VA PARA LA CREACIÓN DE POSTS CREO
-            if (!Program.con.CheckConn())
-            {
-                Program.con.OpConn("PostLoader", "Xkjjk)923=!1f");
+            if (post is null) { 
+                sql = "select * from verposts where Usuario " + usu;
+                // AL CREAR EL VIEW VERPOSTS, EL USURAIO YA NO TIENE QUE UTILIZAR PERMISOS EN TODAS
+                // LAS TABLAS, SOLAMENTE EN EL VIEW, LO MISMO VA PARA LA CREACIÓN DE POSTS CREO
+            } else { 
+                    sql = "SELECT * from vercomentarios WHERE Post = '" + post + "'";
             }
-            rs = Program.cn.Execute(sql, out Program.dump);
+            
+            if (con.CheckConn() == false)
+            {
+                con.OpConn("PostLoader", "Xkjjk)923=!1f");
+                invitado = true;
+            }
+            rs = con.Ejecutar(sql);
+            MessageBox.Show(rs.ToString());
+            MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
 
             for (int i = 0; i < rs.Fields.Count; i++)
             {
@@ -38,6 +50,10 @@ namespace ProyectoBase
                 }
                 dt.Rows.Add(row);
                 rs.MoveNext();
+            }
+            if (invitado) {
+                con.CCon();
+                invitado = false;
             }
             return dt;
         }
@@ -47,22 +63,28 @@ namespace ProyectoBase
             string Likes;
             ADODB.Recordset rs;
             String sql;
-            sql = "SELECT COUNT(*) as Likes FROM Reacciona WHERE id_post = '" + post + "' AND reaccion = 'corazon'; ";
-            if (!Program.con.CheckConn())
+            sql = "SELECT * FROM likes WHERE Post = '" + post + "'";
+            if (con.CheckConn() == false)
             {
-                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
-                Likes = "Err01";
+                //MessageBox.Show("Error1: La sesión del usuario esta cerrada.");
+                //Likes = "Err01";
+                con.OpConn("PostLoader", "Xkjjk)923=!1f");
+                invitado = true;
+
             }
-            else
+            rs = con.Ejecutar(sql);
+
+
+            if (!rs.EOF)
             {
-                rs = Program.cn.Execute(sql, out Program.dump);
+                Likes = rs.Fields["Likes"].Value.ToString();
+            }
+            else Likes = "0";
 
-
-                if (!rs.EOF)
-                {
-                    Likes = rs.Fields["Likes"].Value.ToString();
-                }
-                else Likes = "0";
+            if (invitado)
+            {
+                con.CCon();
+                invitado = false;
             }
             return Likes;
 
@@ -72,55 +94,27 @@ namespace ProyectoBase
         {
             ADODB.Recordset rs;
             String sql;
-            sql = "select * from Reacciona where id_post = '" + post + "' AND id_usuario = '" + Program.userid + "'";
-            if (!Program.con.CheckConn())
+            sql = "SELECT * FROM likes WHERE Post = '" + post + "' AND Usuario = NombreUsuario()";
+
+            if (!con.CheckConn())
             {
-                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
                 return false;
             }
             else
             {
-                rs = Program.cn.Execute(sql, out Program.dump);
+                rs = con.Ejecutar(sql);
 
-                if (!rs.EOF)
+                if (rs == null || rs.BOF || rs.EOF)
                 {
-                    //Usuario dio like
+                    // Usuario no dio like
+                    return false;
+                }
+                else
+                {
+                    // Usuario dio like
                     return true;
                 }
-                else return false;
             }
-        }
-
-
-        public DataTable SelectPostComm(string post)
-        {
-
-            DataTable dt = new DataTable();
-            ADODB.Recordset rs;
-            String sql;
-            sql = "SELECT * from verposts WHERE Post = '" + post + "'";
-            if (!Program.con.CheckConn())
-            {
-                MessageBox.Show("Error: La sesión ha sido cerrada.");
-            }
-            rs = Program.cn.Execute(sql, out Program.dump);
-
-            for (int i = 0; i < rs.Fields.Count; i++)
-            {
-                dt.Columns.Add(rs.Fields[i].Name, typeof(string));
-            }
-
-            while (!rs.EOF)
-            {
-                DataRow row = dt.NewRow();
-                for (int i = 0; i < rs.Fields.Count; i++)
-                {
-                    row[i] = rs.Fields[i].Value;
-                }
-                dt.Rows.Add(row);
-                rs.MoveNext();
-            }
-            return dt;
         }
 
         public void CargarPost()
@@ -133,8 +127,14 @@ namespace ProyectoBase
             string id;
             string likes;
             Boolean liked;
-            //selectUserPosts("IS NOT NULL"); //obtiene los post de todos los usuarios, para un solo usuario usar ("= 'usuario'")
-            foreach (DataRow row in selectUserPosts("IS NOT NULL").Rows)
+            if (con.CheckConn()) {
+
+                con.OpConn("PostLoader", "Xkjjk)923=!1f");
+                invitado = true;
+            }
+            DataTable talba = selectUC(null, "IS NOT NULL");
+            //selectUC("IS NOT NULL"); //obtiene los post de todos los usuarios, para un solo usuario usar ("= 'usuario'")
+            foreach (DataRow row in talba.Rows)
             {
                 usu = (string)row["Usuario"];
                 txt = (string)row["Texto"];
@@ -158,50 +158,36 @@ namespace ProyectoBase
 
         public void crearPost(string texto, string img) { // SI EL USUARIO TIENE LOS PRIVILEGIOS DE INSERT EN POST Y PUBLICA, DEBERÍA DE PODER CREAR UN POST CON SU USUARIO.
             string sql;
-            if (!Program.con.CheckConn())
+            if (!con.CheckConn())
             {
-                MessageBox.Show("Error: La sesión del usuario esta cerrada.");
+                MessageBox.Show("Error1: La sesión del usuario esta cerrada.");
             }
             else {
 
-                sql = "call creaPost('" + Program.userid + "', '" + texto +"', '" + img +"')";
-                Program.cn.Execute(sql, out Program.dump);
+                sql = "call creaPost('" + texto +"', '" + img +"')";
+                con.Ejecutar(sql);
             }
         }
 
         public void CrearCom(string texto, string post) {
             string sql;
-            if (!Program.con.CheckConn())
+            if (!con.CheckConn())
             {
                 MessageBox.Show("Error: La sesión del usuario esta cerrada.");
             }
             else
             {
-                sql = "insert into Comenta(id_usuario, id_post, fecha, comentario) values('" + Program.userid + "', '" + post + "', NOW(),'" + texto + "')";
-                Program.cn.Execute(sql, out Program.dump);
+                sql = "CALL pubCom('" + post + "','" + texto + "')";
+                con.Ejecutar(sql);
             }
         }
-        public void LikePost(string post) { 
-            // Falta hacer
-        }
-
-        public void CargarComs(string postid) {
-            string usu;
-            string txt;
-            string id;
-            foreach (DataRow row in SelectPostComm(postid).Rows)
-            {
-                usu = (string)row["Usuario"];
-                txt = (string)row["Comentario"];
-                id = (string)row["Post"];
-
-                var ucComentario = new ucComentario();
-                ucComentario.cargarNombre = usu;
-                ucComentario.cargarComentario = txt;
-                ucComentario.Width = Program.frmPost.flowLayoutPanel1.ClientSize.Width;
-                ucComentario.guna2Panel1.Width =
-                ucComentario.txtComentario.Width = Program.frmPost.flowLayoutPanel1.ClientSize.Width;
-                Program.frmPost.flowLayoutPanel1.Controls.Add(ucComentario);
+        public void LikePost(string post) {
+            string sql;
+            if (con.CheckConn()) {
+                if (IsLiked(post)) { //Usuario ya dio like, hay que quitarlo.
+                    sql = "CALL quitarLike('" + post + "')";
+                }
+                else sql = "CALL darLike('" + post +"')";
             }
         }
 

@@ -11,28 +11,24 @@
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmcrearpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmcrearpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +38,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T17:29:32.047Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Program.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
+              "RelativeToolTip": "ProyectoBase\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T11:19:23.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "ProyectoBase\\frmPrincipal.cs",
               "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
               "RelativeToolTip": "ProyectoBase\\frmPrincipal.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAawDkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAIwJ0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T21:31:21.658Z",
+              "WhenOpened": "2024-11-01T10:19:21.718Z",
               "EditorCaption": ""
             },
             {
@@ -65,33 +85,22 @@
               "RelativeDocumentMoniker": "ProyectoBase\\ucPosts.cs",
               "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
               "RelativeToolTip": "ProyectoBase\\ucPosts.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAA6wF8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAD4v2cAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:29:10.439Z",
+              "WhenOpened": "2024-10-31T10:59:18.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ucPosts.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\ucPosts.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoBase\\ucPosts.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Usuario.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeToolTip": "ProyectoBase\\Usuario.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAMwGIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:28:40.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\Post.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
-              "RelativeToolTip": "ProyectoBase\\Post.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:28:34.359Z",
+              "WhenOpened": "2024-10-30T21:25:17.631Z",
               "EditorCaption": ""
             },
             {
@@ -102,43 +111,23 @@
               "RelativeDocumentMoniker": "ProyectoBase\\Conexion.cs",
               "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Conexion.cs",
               "RelativeToolTip": "ProyectoBase\\Conexion.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAIAwwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T18:51:54.298Z"
+              "WhenOpened": "2024-10-30T21:25:06.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\Usuario.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
-              "RelativeToolTip": "ProyectoBase\\Usuario.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAA5wF0AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Post.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeToolTip": "ProyectoBase\\Post.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAMwCMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:20:19.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T21:19:39.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmCrearPost.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmCrearPost.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\frmCrearPost.cs",
-              "ToolTip": "C:\\Users\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmCrearPost.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Lab5\\Downloads\\BORRAAMEEEEEEEE\\2da-Entrega-Programacion\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmCrearPost.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:21:38.227Z"
+              "WhenOpened": "2024-10-30T21:09:09.362Z",
+              "EditorCaption": ""
             }
           ]
         }

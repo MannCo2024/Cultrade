@@ -7,6 +7,7 @@ namespace ProyectoBase
 {
     public partial class frmPrincipal : Form
     {
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -54,15 +55,14 @@ namespace ProyectoBase
         private void btnIS_Click(object sender, EventArgs e)
         {
             Program.frmLogin = new frmLogin();
-            Program.cn.Close();
             Program.frmLogin.ShowDialog();
+
             if (con.CheckConn() == true)
             {
                 pnlInvitado.Hide();
                 pnlInvitado.Enabled = false;
                 lblUsuario.Text = Program.userid;
             }
-            this.Focus();
             pst.CargarPost();
         }
 
@@ -148,14 +148,14 @@ namespace ProyectoBase
         }
 
         private void frmPrincipal_Activated(object sender, EventArgs e)
-        {
+        {/*
             if (con.CheckConn() == false)
             {
                 pnlInvitado.Enabled = true;
                 pnlInvitado.Visible = true;
                 lblUsuario.Text = Program.userid;
             }
-            pst.CargarPost();
+            pst.CargarPost();*/
         }
     }
 }

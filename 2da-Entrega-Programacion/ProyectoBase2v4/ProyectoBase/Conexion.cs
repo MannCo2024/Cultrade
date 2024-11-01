@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ADODB;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,21 +9,40 @@ using System.Threading.Tasks;
 namespace ProyectoBase
 {
     class Conexion {
+        ADODB.Connection cn = new();
+        object dump;
+
         public Boolean CheckConn() {
-            if (Program.cn.State == 0) {                                      //1 
-                return false; //LA CONEXION ESTA CERRADA. MODO INVITADO.     //2
+            if (cn.State == 0) {
+                return false; //LA CONEXION ESTA CERRADA. MODO INVITADO.     
             }
-            return true; //CONEXION ABIERTA. CARGANDO DATOS.               //3
+            else {
+            return true; //CONEXION ABIERTA. CARGANDO DATOS.
+            }
+                         
+        }
+
+        public Recordset Ejecutar(string sentencia) {
+            Recordset rs = new Recordset();
+            if (cn.State == 0)
+            {
+                rs = cn.Execute(sentencia, out dump);
+                MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
+            }
+                return rs;
         }
 
         public void OpConn(String usu, String pass) {       //ABRIR CONEXION CON EL USUARIO Y CONSTRASEÑA INSERTADOS
-            Program.cn.Open("MiODBC", usu, pass);
-            Program.cn.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
-            Program.cn.Execute("USE bd", out Program.dump);
+            cn.Open("MiODBC", usu, pass);
+            cn.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
+            cn.Execute("USE bdd", out Program.dump);
         }
         public void CCon() {
-            Program.userid = "Invitado";
-            Program.cn.Close();
+            if (CheckConn())
+            {
+                Program.userid = "Invitado";
+                cn.Close();
+            }
         }        
         
     }

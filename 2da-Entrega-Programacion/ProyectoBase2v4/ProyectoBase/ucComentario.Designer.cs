@@ -29,12 +29,10 @@ namespace ProyectoBase
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.pbPFP = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.txtComentario = new System.Windows.Forms.TextBox();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -42,19 +40,10 @@ namespace ProyectoBase
             ((System.ComponentModel.ISupportInitialize)(this.pbPFP)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.splitContainer1);
-            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Gray;
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(255, 132);
-            this.guna2Panel1.TabIndex = 0;
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -119,11 +108,10 @@ namespace ProyectoBase
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.splitContainer1);
             this.MinimumSize = new System.Drawing.Size(255, 132);
             this.Name = "ucComentario";
             this.Size = new System.Drawing.Size(255, 132);
-            this.guna2Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -136,11 +124,9 @@ namespace ProyectoBase
         }
 
         #endregion
-
-        public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbPFP;
         public System.Windows.Forms.TextBox txtComentario;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        public System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

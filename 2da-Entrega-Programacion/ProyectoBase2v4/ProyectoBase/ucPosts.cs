@@ -13,12 +13,14 @@ namespace ProyectoBase
 {
     public partial class ucPosts : UserControl
     {
+        Conexion con = new Conexion();
         public ucPosts()
         {
             InitializeComponent();
         }
         private string post_id;
         private Boolean liked;
+        Post pst = new Post();
         public string CargarID {
             get => post_id;
             set => post_id = value;
@@ -50,6 +52,7 @@ namespace ProyectoBase
         }
         public Boolean userLiked
         {
+            get => liked;
             set => liked = value;
         }
 
@@ -99,7 +102,6 @@ namespace ProyectoBase
             ucPosts.Dock = DockStyle.Fill;
             Program.frmPost = new frmPost();
             Program.frmPost.splitContainer2.Panel1.Controls.Add(ucPosts);
-            Program.pst.CargarComs(CargarID);
             Program.frmPost.Show();
         }
 
@@ -131,9 +133,9 @@ namespace ProyectoBase
             
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void guna2ImageButton1_Click(object sender, EventArgs e)      //Click en comentar
         {
-            if (Program.con.CheckConn() == true) { 
+            if (con.CheckConn() == true) { 
                 frmComentar com = new frmComentar(CargarID);
                 com.ShowDialog();
             }
@@ -141,13 +143,7 @@ namespace ProyectoBase
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-            if (Program.con.CheckConn() == true)
-            {
-                if (liked)
-                {
 
-                }
-            }
         }
     }
     
