@@ -6,35 +6,45 @@ using System.Data;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Linq.Expressions;
 
 namespace ProyectoBase
 {
     class Post
     {
-        Conexion con = new Conexion();
-        ADODB.Connection cn = new ADODB.Connection();
+        Conexion con = Program.con;
+        ADODB.Connection cn = Program.cn;
+
         bool invitado = false;
 
         public DataTable selectUC(string post, string usu) {
             DataTable dt = new DataTable();
             ADODB.Recordset rs;
-            String sql;
+            String sql; 
             if (post is null) { 
-                sql = "select * from verposts where Usuario " + usu;
+                sql = "select * from verposts where Usuario " + usu;  // POR ALGÚNA RAZON ANDA ANDANDO MAL?? A VECES NO MUESTRA, A VECES SI, OCURREN TAMBIÉN PROBLEMAS CON LOS USUARIOS Y EL INICIO DE SESIÓN
                 // AL CREAR EL VIEW VERPOSTS, EL USURAIO YA NO TIENE QUE UTILIZAR PERMISOS EN TODAS
                 // LAS TABLAS, SOLAMENTE EN EL VIEW, LO MISMO VA PARA LA CREACIÓN DE POSTS CREO
             } else { 
                     sql = "SELECT * from vercomentarios WHERE Post = '" + post + "'";
             }
-            
-            if (con.CheckConn() == false)
+
+
+            try
             {
+                if (con.CheckConn() == false)
+            {
+                con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 invitado = true;
             }
-            rs = con.Ejecutar(sql);
-            MessageBox.Show(rs.ToString());
-            MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
+                rs = con.Ejecutar(sql);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al ejecutar la consulta: " + ex.Message);
+                return dt;
+            }
 
             for (int i = 0; i < rs.Fields.Count; i++)
             {

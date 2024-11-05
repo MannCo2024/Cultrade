@@ -1,3 +1,11 @@
+EL SQL QUE NO ESTA EN LA CARPETA BasedeDatos NO SE UTILIZA. UTILIZEN LOS 4 QUE SE ENUCENTRAN DENTRO DE LA CARPETA EN EL ORDEN:
+MannCoBDv3.sql
+UsuariosBDD.sql
+población.sql
+ViewsYTransacciones.sql
+
+-------------------------------------
+
 El proyecto no puede cargar si no se tiene visual studio 2022 instalado por la manera en la que esta estructurado el proyecto, ya que se empezó en 2022 antes de pasar a 2019.
 
 Si quieres ejecutar el proyecto sin necesidad de usar visual abre el ejecutable ubicado en bin/Debug/net472/

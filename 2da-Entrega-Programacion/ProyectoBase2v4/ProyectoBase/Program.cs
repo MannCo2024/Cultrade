@@ -21,6 +21,10 @@ namespace ProyectoBase
         public static Notificaciones frmNotificaciones;
         public static frmPost frmPost;
         public static frmCrearPost frmCrearPost;
+
+        public static ADODB.Connection cn = new ADODB.Connection();
+        public static Conexion con = new Conexion();
+
         public static Post pst = new Post();
         public static object dump;
         public static Random rnd = new Random();
@@ -40,29 +44,6 @@ namespace ProyectoBase
             return new string(chars);
         }
 
-        public static string RsAString(ADODB.Recordset rs)
-        {
-            if (rs == null || rs.EOF)
-            {
-                return "null";
-            }
-
-            string resultado = "null";
-            int fieldCount = rs.Fields.Count;
-
-            if (!rs.EOF)
-            {
-                for (int i = 0; i < fieldCount; i++)
-                {
-                    string n = rs.Fields[i].Name;
-                    object v = rs.Fields[i].Value;
-
-                    resultado = $"{v}";
-                }
-            }
-
-            return resultado;
-        }
 
         [STAThread]
         static void Main()

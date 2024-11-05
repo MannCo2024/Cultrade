@@ -8,8 +8,8 @@ namespace ProyectoBase
 {
     class Usuario
     {
-        ADODB.Connection cn = new ADODB.Connection();
-        Conexion con = new Conexion();
+        ADODB.Connection cn = Program.cn;
+        Conexion con = Program.con;
         public String ObtenerPais() {
             IpInfo ipInfo = new IpInfo();
             string info = new System.Net.WebClient().DownloadString("https://ipinfo.io");
@@ -74,7 +74,7 @@ namespace ProyectoBase
 
         public void ValidoUsuario(String usu, String pass)
         {
-            if (con.CheckConn() == false)     
+            if (!con.CheckConn())     
             {
                 ADODB.Recordset rs;                  
                 String sql;
@@ -89,14 +89,15 @@ namespace ProyectoBase
                 }
 
                 sql = "SELECT id_usuario FROM Usuario where id_usuario = '" + usu + "';";
-                rs = con.Ejecutar(sql);                           
-                Program.userid = usu;                                                         
+                rs = con.Ejecutar(sql);   
+                
                 if (!rs.EOF)                        
                 {
                     con.CCon();
                     try
                     {
                         con.OpConn(usu, pass);
+                        Program.userid = usu;
                         Program.frmLogin.Dispose();
                     }
                     catch (Exception)

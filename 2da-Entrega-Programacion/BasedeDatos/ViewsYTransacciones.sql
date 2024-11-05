@@ -7,6 +7,22 @@ DROP PROCEDURE IF EXISTS darLike;
 DROP PROCEDURE IF EXISTS quitarLike;
 
 
+-- view verposts
+CREATE VIEW verposts AS
+SELECT 
+    pub.id_usuario AS Usuario, 
+    p.id_post AS Post, 
+    p.texto AS Texto, 
+    i.datapath AS Imagen, 
+    p.modificado AS Modificado 
+FROM 
+    Post p 
+JOIN 
+    Publica pub ON p.id_post = pub.id_post 
+LEFT JOIN 
+    Imagen i ON p.id_post = i.id_post;
+
+
 -- Procedimiento creaPost
 DELIMITER //
 CREATE PROCEDURE creaPost(

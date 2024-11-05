@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoBase
 {
-    class Conexion {
-        ADODB.Connection cn = new();
+    class Conexion
+    {
+        ADODB.Connection cn = Program.cn;
         object dump;
 
         public Boolean CheckConn() {
@@ -24,18 +25,30 @@ namespace ProyectoBase
 
         public Recordset Ejecutar(string sentencia) {
             Recordset rs = new Recordset();
-            if (cn.State == 0)
+            if (cn.State != 0)
             {
                 rs = cn.Execute(sentencia, out dump);
-                MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
             }
-                return rs;
+            try
+            {
+                //MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR::" + ex.Message + " :: DE PARTE DE :: " + ex.Source + " :: " + ex.StackTrace + " :: " + ex.InnerException);
+            }
+
+            return rs;
         }
 
         public void OpConn(String usu, String pass) {       //ABRIR CONEXION CON EL USUARIO Y CONSTRASEÑA INSERTADOS
-            cn.Open("MiODBC", usu, pass);
-            cn.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
-            cn.Execute("USE bdd", out Program.dump);
+            try
+            {
+                cn.Open("MiODBC", usu, pass);
+                cn.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
+                cn.Execute("USE bdd", out Program.dump);
+            }
+            catch { };
         }
         public void CCon() {
             if (CheckConn())
