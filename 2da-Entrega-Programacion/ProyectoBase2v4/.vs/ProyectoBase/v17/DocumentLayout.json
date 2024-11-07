@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7F951E46-AA75-463C-9FCA-42536A880069}|BackOffice\\BackOffice.csproj|C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\backoffice\\solcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7F951E46-AA75-463C-9FCA-42536A880069}|BackOffice\\BackOffice.csproj|solutionrelative:backoffice\\solcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\mannc\\source\\repos\\proyecto\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SolCre.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\BackOffice\\SolCre.cs",
+              "RelativeDocumentMoniker": "BackOffice\\SolCre.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\BackOffice\\SolCre.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BackOffice\\SolCre.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T12:40:02.454Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,61 +51,46 @@
               "RelativeDocumentMoniker": "ProyectoBase\\Post.cs",
               "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
               "RelativeToolTip": "ProyectoBase\\Post.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAADNAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:09:09.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\Program.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
-              "RelativeToolTip": "ProyectoBase\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T11:19:23.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ucPosts.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\ucPosts.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
-              "RelativeToolTip": "ProyectoBase\\ucPosts.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAjwAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T10:59:18.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\Usuario.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
-              "RelativeToolTip": "ProyectoBase\\Usuario.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAkwFoAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:25:17.631Z",
+              "WhenOpened": "2024-11-06T20:33:10.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Conexion.cs",
-              "RelativeDocumentMoniker": "ProyectoBase\\Conexion.cs",
-              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Conexion.cs",
-              "RelativeToolTip": "ProyectoBase\\Conexion.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCEAAAASAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Usuario.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeToolTip": "ProyectoBase\\Usuario.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwC8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:25:06.595Z",
+              "WhenOpened": "2024-11-07T10:47:36.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeToolTip": "ProyectoBase\\frmLogin.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxUAAACWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:44:37.59Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBase\\frmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:44:26.51Z"
             }
           ]
         }

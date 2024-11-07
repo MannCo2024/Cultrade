@@ -1,0 +1,12 @@
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\bin\Debug\BackOffice.exe.config
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\bin\Debug\BackOffice.exe
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\bin\Debug\BackOffice.pdb
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\bin\Debug\Guna.UI2.dll
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.csproj.AssemblyReference.cache
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.BackOffice.resources
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.Properties.Resources.resources
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.csproj.GenerateResource.cache
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.csproj.CoreCompileInputs.cache
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.csproj.Up2Date
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.exe
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\BackOffice\obj\Debug\BackOffice.pdb

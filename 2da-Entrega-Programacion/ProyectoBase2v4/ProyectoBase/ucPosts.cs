@@ -95,11 +95,14 @@ namespace ProyectoBase
         private void guna2Panel2_DoubleClick(object sender, EventArgs e)    //Incredibly messy
         {
             var ucPosts = new ucPosts();
+            ucPosts.CargarID = this.CargarID;
             ucPosts.CargImg = guna2PictureBox1.Image;
             ucPosts.CargarTxt = txtTexto.Text;
             ucPosts.cargarUsu = lblUsu.Text;
             ucPosts.cargarLikes = lblLikes.Text;
             ucPosts.Dock = DockStyle.Fill;
+            ucPosts.cargarLikes = pst.SelectPostLikes(CargarID);
+            ucPosts.userLiked = pst.IsLiked(CargarID);
             Program.frmPost = new frmPost();
             Program.frmPost.splitContainer2.Panel1.Controls.Add(ucPosts);
             Program.frmPost.Show();
@@ -107,14 +110,7 @@ namespace ProyectoBase
 
         private void ucPosts_Load(object sender, EventArgs e)
         {
-            if (liked)
-            {
-                guna2ImageButton2.Image = Resources.corazonhover;
-            }
-            else 
-            {
-                guna2ImageButton2.Image = Resources.corazon;
-            }
+            actLikes();
         }
 
         private void txtTexto_Load(object sender, EventArgs e)
@@ -143,7 +139,21 @@ namespace ProyectoBase
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
+            pst.LikePost(this.post_id);
+            liked = pst.IsLiked(this.post_id);
+            actLikes();
+        }
 
+        private void actLikes() {
+            this.lblLikes.Text = pst.SelectPostLikes(this.post_id);
+            if (liked)
+            {
+                guna2ImageButton2.Image = Resources.corazonhover;
+            }
+            else
+            {
+                guna2ImageButton2.Image = Resources.corazon;
+            }
         }
     }
     

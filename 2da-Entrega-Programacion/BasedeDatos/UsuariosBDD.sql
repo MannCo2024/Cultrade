@@ -19,6 +19,7 @@ CREATE USER 'marialopez123' IDENTIFIED BY 'marilo99';
 
 CREATE USER 'UserCheck'@ IDENTIFIED BY 'Xk9rr!23=!0A';
 GRANT SELECT ON bdd.Usuario TO 'UserCheck';
+GRANT SELECT ON bdd.verUsu TO 'UserCheck';
 
 CREATE USER 'PostLoader'@ IDENTIFIED BY 'Xkjjk)923=!1f';
 
@@ -26,10 +27,16 @@ GRANT SELECT ON bdd.verposts TO 'PostLoader';
 GRANT SELECT ON bdd.vercomentarios TO 'PostLoader';
 GRANT SELECT ON bdd.likes TO 'PostLoader';
 
+GRANT SELECT ON bdd.likes TO 'juanpe1';
+GRANT SELECT ON bdd.verposts TO 'juanpe1';
+GRANT SELECT ON bdd.vercomentarios TO 'juanpe1';
+
 GRANT EXECUTE ON PROCEDURE bdd.creaPost TO 'juanpe1';
 GRANT EXECUTE ON PROCEDURE bdd.pubCom TO 'juanpe1';
 GRANT EXECUTE ON PROCEDURE bdd.darLike TO 'juanpe1';
 GRANT EXECUTE ON PROCEDURE bdd.quitarLike TO 'juanpe1';
+
+GRANT EXECUTE ON FUNCTION bdd.NombreUsuario TO 'juanpe1';
 
 -- NO FUNCIONAN LOS ASTERISCOS!!!!
 GRANT SELECT ON bdd.verposts TO *;

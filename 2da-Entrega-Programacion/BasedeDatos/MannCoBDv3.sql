@@ -25,28 +25,36 @@ CREATE TABLE Preferencias( -- De usuario
     
     PRIMARY KEY (id_preferencias),
     CONSTRAINT FK_id_preferencias FOREIGN KEY (id_preferencias) REFERENCES Usuario(id_usuario)
-) ;
+);
+
+CREATE TABLE Solicitud(
+	id int auto_increment,
+    estado enum('🟥', '🟨', '🟩'),  -- 🟥 Cancelado, 🟨 Pendiente, 🟩 Aceptado
+	fechaCreacion datetime not null,
+    fechaCompletado datetime,
+	
+	primary key (id)
+);
 
 CREATE TABLE Registros(
+	solicitud int references Solicitud(id),
 	id_usuario varchar(32) unique,
     nombre varchar(32) not null,
     apellido varchar(32) not null,
     fechaNacimiento datetime,
 	mail varchar (64) unique not null,
     pais varchar(14) not null,
-    pfp varchar(255),
     genero enum('M','F','O'),
     celular varchar(15) unique,
-    fechaAceptado datetime not null,
-    estado enum('En Espera', 'Aceptado', 'Rechazado'),
+	pass varchar(25) not null,
     
-    PRIMARY KEY (id_usuario, celular, mail)
+    PRIMARY KEY (id_usuario, celular, mail),
+	constraint foreign key (solicitud) references Solicitud(id)
 );
 
-
 CREATE TABLE AniadeAmigo( -- >>> Verificar su función correcta   |   EN TEORÍA ESTA ANDANDO
-	id_usuario1 varchar(32) not null references Usuario(id_usuario),
-    id_usuario2 varchar(32) not null references Usuario(id_usuario),
+	id_usuario1 varchar(32) unique references Usuario(id_usuario),
+    id_usuario2 varchar(32) unique references Usuario(id_usuario),
     fecha datetime not null
 );
 

@@ -9,6 +9,7 @@ namespace ProyectoBase
         {
             InitializeComponent();
         }
+        Usuario u = new Usuario();
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -17,16 +18,8 @@ namespace ProyectoBase
 
         private void CrearCuenta_Click(object sender, EventArgs e)
         {
-            //ESTA OPCION NO ESTA FUNCIONANDO, PARA LA 3RA ENTREGA ESTA JUNTO AL BACKOFFICE
-
-            Usuario u = new Usuario();
-            String test = u.ObtenerPais();
-            MessageBox.Show(test);
-
-            
             string fechaNac = dtpFechaNac.Value.Year.ToString() + "-" + dtpFechaNac.Value.Month.ToString() + "-" + dtpFechaNac.Value.Day.ToString();
-            MessageBox.Show(fechaNac);
-            //VALOR DE FECHA NACIMIENTO CAMBIADO PARA SQL dtpFechaNac.Value.Year.ToString() + "-" + dtpFechaNac.Value.Month.ToString() + "-" + dtpFechaNac.Value.Day.ToString()
+            u.CreoUsuario(txtUsuR.Text, txtNom.Text, txtApe.Text, fechaNac, cbGen.SelectedIndex.ToString(), txtTel.Text, txtMail.Text, txtPassR.Text);
         }
 
         private void iniciarbtn_Click(object sender, EventArgs e) 
@@ -43,7 +36,7 @@ namespace ProyectoBase
 
         private void btnIS_Click(object sender, EventArgs e)
         {
-            Usuario u = new Usuario();
+            
 
             u.ValidoUsuario(txtUsuarioIS.Text, txtPassIS.Text);
 

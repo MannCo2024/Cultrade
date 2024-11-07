@@ -22,9 +22,7 @@ namespace ProyectoBase
             ADODB.Recordset rs;
             String sql; 
             if (post is null) { 
-                sql = "select * from verposts where Usuario " + usu;  // POR ALGÚNA RAZON ANDA ANDANDO MAL?? A VECES NO MUESTRA, A VECES SI, OCURREN TAMBIÉN PROBLEMAS CON LOS USUARIOS Y EL INICIO DE SESIÓN
-                // AL CREAR EL VIEW VERPOSTS, EL USURAIO YA NO TIENE QUE UTILIZAR PERMISOS EN TODAS
-                // LAS TABLAS, SOLAMENTE EN EL VIEW, LO MISMO VA PARA LA CREACIÓN DE POSTS CREO
+                sql = "select * from verposts where Usuario " + usu;
             } else { 
                     sql = "SELECT * from vercomentarios WHERE Post = '" + post + "'";
             }
@@ -32,9 +30,8 @@ namespace ProyectoBase
 
             try
             {
-                if (con.CheckConn() == false)
+                if (!con.CheckConn())
             {
-                con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 invitado = true;
             }
@@ -73,8 +70,8 @@ namespace ProyectoBase
             string Likes;
             ADODB.Recordset rs;
             String sql;
-            sql = "SELECT * FROM likes WHERE Post = '" + post + "'";
-            if (con.CheckConn() == false)
+            sql = "SELECT COUNT(*) as Likes FROM likes WHERE Post = '" + post + "'";
+            if (!con.CheckConn())
             {
                 //MessageBox.Show("Error1: La sesión del usuario esta cerrada.");
                 //Likes = "Err01";
@@ -104,17 +101,18 @@ namespace ProyectoBase
         {
             ADODB.Recordset rs;
             String sql;
-            sql = "SELECT * FROM likes WHERE Post = '" + post + "' AND Usuario = NombreUsuario()";
-
+            sql = "SELECT * FROM likes WHERE Post = '" + post + "' AND Usuario = NombreUsuario();";
+                        ///MIRAR EL VIEW DE LIKES PORQUE ESTA MEDIO RARO:::
             if (!con.CheckConn())
             {
+                // MessageBox.Show("Conexion cerrada1 en IsLiked, CheckConn");
                 return false;
             }
             else
             {
                 rs = con.Ejecutar(sql);
 
-                if (rs == null || rs.BOF || rs.EOF)
+                if (rs.EOF && rs.BOF)
                 {
                     // Usuario no dio like
                     return false;
@@ -137,7 +135,7 @@ namespace ProyectoBase
             string id;
             string likes;
             Boolean liked;
-            if (con.CheckConn()) {
+            if (!con.CheckConn()) {
 
                 con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 invitado = true;
@@ -198,6 +196,8 @@ namespace ProyectoBase
                     sql = "CALL quitarLike('" + post + "')";
                 }
                 else sql = "CALL darLike('" + post +"')";
+                MessageBox.Show(sql);
+                con.Ejecutar(sql);
             }
         }
 

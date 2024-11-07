@@ -52,6 +52,7 @@
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
     <PackageReference Include="JsonSerializer" Version="1.0.5" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Vedoo.VedooControls" Version="2.0.3" />
   </ItemGroup>
 

@@ -29,14 +29,6 @@ namespace ProyectoBase
             {
                 rs = cn.Execute(sentencia, out dump);
             }
-            try
-            {
-                //MessageBox.Show("Recordset :|: " + rs.GetString() + " :|: " + rs.GetRows());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR::" + ex.Message + " :: DE PARTE DE :: " + ex.Source + " :: " + ex.StackTrace + " :: " + ex.InnerException);
-            }
 
             return rs;
         }
@@ -48,7 +40,9 @@ namespace ProyectoBase
                 cn.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
                 cn.Execute("USE bdd", out Program.dump);
             }
-            catch { };
+            catch (Exception ex){
+                MessageBox.Show("ERROR!!::" + ex.Message + " :: DE PARTE DE :: " + ex.Source + " :: " + ex.StackTrace + " :: " + ex.InnerException);
+            };
         }
         public void CCon() {
             if (CheckConn())
