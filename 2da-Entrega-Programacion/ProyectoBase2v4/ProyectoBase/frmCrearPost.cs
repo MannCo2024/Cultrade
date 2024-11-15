@@ -94,7 +94,7 @@ namespace ProyectoBase
         {
             string archivo = nuevoNomArch;
             Program.pst.crearPost(txtTexto.Text, archivo);
-            Program.pst.CargarPost();
+            Program.pst.CargarPost("principal", null, null);
             Program.frmCrearPost.Dispose();
         }
 

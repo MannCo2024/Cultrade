@@ -32,6 +32,7 @@ namespace ProyectoBase
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPosts));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblLikes = new System.Windows.Forms.Label();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -41,7 +42,6 @@ namespace ProyectoBase
             this.lblUsu = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblLikes = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,10 +85,23 @@ namespace ProyectoBase
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             this.guna2Panel2.DoubleClick += new System.EventHandler(this.guna2Panel2_DoubleClick);
             // 
+            // lblLikes
+            // 
+            this.lblLikes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblLikes.AutoSize = true;
+            this.lblLikes.Location = new System.Drawing.Point(78, 339);
+            this.lblLikes.Margin = new System.Windows.Forms.Padding(3);
+            this.lblLikes.Name = "lblLikes";
+            this.lblLikes.Size = new System.Drawing.Size(13, 13);
+            this.lblLikes.TabIndex = 60;
+            this.lblLikes.Text = "0";
+            this.lblLikes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // guna2ImageButton4
             // 
             this.guna2ImageButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton4.HoverState.Image = global::ProyectoBase.Properties.Resources.compartirhover;
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton4.Image = global::ProyectoBase.Properties.Resources.compartir;
@@ -105,6 +118,7 @@ namespace ProyectoBase
             // 
             this.guna2ImageButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton3.Image = global::ProyectoBase.Properties.Resources.guardar;
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
@@ -115,11 +129,13 @@ namespace ProyectoBase
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton3.Size = new System.Drawing.Size(64, 54);
             this.guna2ImageButton3.TabIndex = 57;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = global::ProyectoBase.Properties.Resources.comentarioshover;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Image = global::ProyectoBase.Properties.Resources.comentarios;
@@ -138,6 +154,7 @@ namespace ProyectoBase
             this.guna2ImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2ImageButton2.CheckedState.Image = global::ProyectoBase.Properties.Resources.corazonhover;
             this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = global::ProyectoBase.Properties.Resources.corazonhover;
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton2.Image = global::ProyectoBase.Properties.Resources.corazon;
@@ -199,10 +216,11 @@ namespace ProyectoBase
             // lblUsu
             // 
             this.lblUsu.AutoSize = true;
+            this.lblUsu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblUsu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblUsu.Location = new System.Drawing.Point(65, 13);
             this.lblUsu.Name = "lblUsu";
-            this.lblUsu.Size = new System.Drawing.Size(105, 16);
+            this.lblUsu.Size = new System.Drawing.Size(104, 16);
             this.lblUsu.TabIndex = 53;
             this.lblUsu.Text = "NombreUsuario";
             this.lblUsu.Click += new System.EventHandler(this.label1_Click);
@@ -210,6 +228,7 @@ namespace ProyectoBase
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::ProyectoBase.Properties.Resources.perfil;
             this.pictureBox3.Location = new System.Drawing.Point(8, 3);
             this.pictureBox3.Name = "pictureBox3";
@@ -217,6 +236,7 @@ namespace ProyectoBase
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 52;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // guna2PictureBox1
             // 
@@ -234,18 +254,6 @@ namespace ProyectoBase
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // lblLikes
-            // 
-            this.lblLikes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblLikes.AutoSize = true;
-            this.lblLikes.Location = new System.Drawing.Point(78, 339);
-            this.lblLikes.Margin = new System.Windows.Forms.Padding(3);
-            this.lblLikes.Name = "lblLikes";
-            this.lblLikes.Size = new System.Drawing.Size(13, 13);
-            this.lblLikes.TabIndex = 60;
-            this.lblLikes.Text = "0";
-            this.lblLikes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ucPosts
             // 

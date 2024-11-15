@@ -235,3 +235,4 @@ C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\Pr
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.exe
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.pdb
 C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Newtonsoft.Json.dll
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.ucPerfil.resources

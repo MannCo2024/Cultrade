@@ -7,29 +7,37 @@ CREATE TABLE Usuario(
 	id_usuario varchar(32) unique,
     nombre varchar(32) not null,
     apellido varchar(32) not null,
-    fechaNacimiento datetime,
+    fechaNacimiento date,
 	mail varchar(64) unique,
     pais varchar(14) not null,
     pfp varchar(255),
-    genero enum('M','F','O'),
+    genero enum('H','M','O'),
     celular varchar(15) unique,
     fechaIngreso datetime not null,
     estado enum('Online', 'Offline'),
+	descripcion varchar(190),
     
     PRIMARY KEY (id_usuario, celular, mail)
 );
 
 CREATE TABLE Preferencias( -- De usuario
-	id_preferencias varchar(32),
+	id_usuario varchar(32),
     preferencias varchar(25),
     
-    PRIMARY KEY (id_preferencias),
+    PRIMARY KEY (id_preferencias, preferencias),
     CONSTRAINT FK_id_preferencias FOREIGN KEY (id_preferencias) REFERENCES Usuario(id_usuario)
 );
 
+CREATE TABLE BackOffice (
+	id int AUTO_INCREMENT not null,
+	nombre varchar(16) unique,
+	
+	primary key (id)
+);
+
 CREATE TABLE Solicitud(
-	id int auto_increment,
-    estado enum('🟥', '🟨', '🟩'),  -- 🟥 Cancelado, 🟨 Pendiente, 🟩 Aceptado
+	id int auto_increment not null,
+    estado enum('Rechazado', 'Pendiente', 'Aceptado'),
 	fechaCreacion datetime not null,
     fechaCompletado datetime,
 	
@@ -37,14 +45,14 @@ CREATE TABLE Solicitud(
 );
 
 CREATE TABLE Registros(
-	solicitud int references Solicitud(id),
+	solicitud int not null references Solicitud(id),
 	id_usuario varchar(32) unique,
     nombre varchar(32) not null,
     apellido varchar(32) not null,
-    fechaNacimiento datetime,
+    fechaNacimiento date,
 	mail varchar (64) unique not null,
     pais varchar(14) not null,
-    genero enum('M','F','O'),
+    genero enum('H','M','O'),
     celular varchar(15) unique,
 	pass varchar(25) not null,
     
@@ -52,10 +60,12 @@ CREATE TABLE Registros(
 	constraint foreign key (solicitud) references Solicitud(id)
 );
 
-CREATE TABLE AniadeAmigo( -- >>> Verificar su función correcta   |   EN TEORÍA ESTA ANDANDO
-	id_usuario1 varchar(32) unique references Usuario(id_usuario),
-    id_usuario2 varchar(32) unique references Usuario(id_usuario),
-    fecha datetime not null
+CREATE TABLE AniadeAmigo(
+	id_usuario1 varchar(32) references Usuario(id_usuario),
+    id_usuario2 varchar(32) references Usuario(id_usuario),
+    fecha datetime not null,
+    
+    primary key (id_usuario1, id_usuario2)
 );
 
 -------------------------------------------------------------- CONTENIDO MULTIMEDIA / OTROS
@@ -104,6 +114,16 @@ CREATE TABLE Comenta(
 CREATE TABLE Comparte(
 	id_usuario varchar(32),
     id_post int,
+    fecha datetime,
+    
+    PRIMARY KEY (id_usuario, id_post),
+	CONSTRAINT FK_id_usuario_Comparte FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    CONSTRAINT FK_id_post_Comparte FOREIGN KEY (id_post) REFERENCES Post(id_post)
+);
+CREATE TABLE Guarda(
+	id_usuario varchar(32),
+    id_post int,
+    fecha datetime,
     
     PRIMARY KEY (id_usuario, id_post),
 	CONSTRAINT FK_id_usuario_Comparte FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
@@ -135,18 +155,23 @@ CREATE TABLE Publica(
 
 CREATE TABLE Red(
 	id_red int AUTO_INCREMENT,
-    duenio varchar(64) not null,
     fechaCreacion datetime not null,
 	nombre varchar(32) not null,
     descripcion varchar(200),
     
-    PRIMARY KEY (id_red),
-    CONSTRAINT FK_duenio_Red FOREIGN KEY (duenio) REFERENCES Usuario(id_usuario)
+    PRIMARY KEY (id_red)
 ); 
+
+CREATE TABLE CreaRed(
+	id_red int references Red(id_red),
+    id_usuario varchar(32) references Usuario(id_usuario),
+    
+    primary key (id_red, id_usuario)
+);
 
 CREATE TABLE UsuarioIngresa(
 	red int not null,
-	usuario varchar(64) not null,
+	usuario varchar(32) not null,
 	fecha datetime not null,
 	
 	primary key (red, usuario, fecha),
@@ -197,73 +222,34 @@ CREATE TABLE Evento(
 
 -------------------------------------------------------------- MENSAJERÍA
 
-CREATE TABLE MensajeRed(
-	id_usuario varchar(32) not null,
-    id_red int not null,
-    fechaEnvio datetime,
-    mensaje varchar(500),
+CREATE TABLE MensajeRed ( 
+    id_usuario varchar(32) not null, 
+    id_red int not null, 
+    fechaEnvio datetime, 
+    mensaje varchar(300), 
     
-    PRIMARY KEY (id_usuario, id_red),
-    CONSTRAINT FK_id_usuario_MensajeRed FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
-    CONSTRAINT FK_id_red_MensajeRed FOREIGN KEY (id_red) REFERENCES Red(id_red)
+    PRIMARY KEY (id_usuario, id_red, fechaEnvio), 
+    CONSTRAINT FK_id_usuario_MensajeRed FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario), 
+    CONSTRAINT FK_id_red_MensajeRed FOREIGN KEY (id_red) REFERENCES Red(id_red) 
 );
 
+
 CREATE TABLE MensajeriaPrivada(
-	id_usuario1 varchar(32) not null references Usuario(id_usuario),
-    id_usuario2 varchar(32) not null references Usuario(id_usuario),
+	id_usuario1 varchar(32) references Usuario(id_usuario),
+    id_usuario2 varchar(32) references Usuario(id_usuario),
 	fechaEnvio datetime,
-    mensaje varchar(500)
+    mensaje varchar(300)
 );
 
 
 
 -------------------------------------------------------------- CONSULTAS
 
--- Ver los mensajes de un usuario
+-- ¨¨ Ver los mensajes de un usuario
 -- ¨¨ los post de un usuario
 -- ¨¨ los eventos de una comunidad
 -- ¨¨ las redes que creó un usuario
 -- ¨¨ el rol que tiene un usuario en una comunidad
 /*
 
-			# Ver mensajes que un usuario envio
-select id_usuario1 as 'Origen', id_usuario2 as 'Destinatario', mensaje as 'Mensaje', fechaEnvio  as 'Fecha de Envio'
-from MensajeriaPrivada
-where id_usuario1 = 'juanpe1';
 
-			# Ver los posts de un usuario
-select pub.id_usuario as 'Usuario', p.id_post as 'Post', p.texto as 'Texto', i.datapath as 'Imagen', v.id_video as 'Video', p.modificado as 'Modificado'
-from Post p
-join Publica pub ON p.id_post = pub.id_post
-left join Video v ON p.id_post = v.id_post
-left join Imagen i ON p.id_post = i.id_post
-where pub.id_usuario is not null
-order by pub.fechaCreacion;
-			# Ver los eventos de una comunidad
-select e.id_evento as Evento, c.id_red as Comunidad, e.imagen, e.descripcion, e.tipo, e.organizador, e.ubicacion, e.fechaInicio as Inicio, e.fechaFin as Fin
-from evento e
-join Comunidad c on e.id_red = c.id_red
-left join Red r on c.id_red = r.id_red
-where c.id_red = '1';
-
-			# Redes que creo un usuario
-select r.id_red as Red, u.id_usuario as Dueño, r.nombre as Nombre, r.fechaCreacion as 'Fecha de Creacion'
-from Red r join Usuario u on r.duenio = u.id_usuario
-where u.id_usuario = 'juanpe1';
-
-			# Rol de un usuario en una comunidad
-select u.id_usuario as Usuario, rl.id_red as Red, r.nombre as Nombre
-from Comunidad c join Red r on c.id_red = r.id_red
-left join Roles rl on c.id_red = rl.id_red
-left join Usuario u on rl.id_usuario = u.id_usuario
-where c.id_red = '1' and u.id_usuario = 'juanpe1' ;
-
-SELECT COUNT(*) as Likes 
-FROM Reacciona 
-WHERE id_post = '1' AND reaccion = 'corazon';
-
-select *
-from Reacciona
-where id_post = '1' AND id_usuario = 'juanpe1';
-
-show engine innodb status;

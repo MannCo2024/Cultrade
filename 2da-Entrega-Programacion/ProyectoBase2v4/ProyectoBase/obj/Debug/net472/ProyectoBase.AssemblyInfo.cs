@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoBase")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Cultrade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8635b01acce002fea45960fc2c6a430126409a0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ProyectoBase")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ProyectoBase")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6eea9162973df8f6ac38199bdc6422c0a59e0603")]
+[assembly: System.Reflection.AssemblyProductAttribute("Cultrade")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Cultrade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

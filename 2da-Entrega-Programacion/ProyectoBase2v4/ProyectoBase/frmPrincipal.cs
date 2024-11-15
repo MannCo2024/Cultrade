@@ -12,38 +12,14 @@ namespace ProyectoBase
         {
             InitializeComponent();
         }
+
         Post pst = new Post();
         Conexion con = new Conexion();
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Program.frmPerfil = new frmPerfil();
-            Program.frmPerfil.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            
-        }
+        Usuario u = new Usuario();
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            pst.CargarPost();
+            pst.CargarPost("principal", null, null);
             if (con.CheckConn() == false)
             {
                 pnlInvitado.Enabled = true;
@@ -63,12 +39,12 @@ namespace ProyectoBase
                 pnlInvitado.Enabled = false;
                 lblUsuario.Text = Program.userid;
             }
-            pst.CargarPost();
+            pst.CargarPost("principal", null, null);
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            pst.CargarPost();
+            pst.CargarPost("principal", null, null);
         }
 
         private void btnNotificaciones_Click(object sender, EventArgs e)
@@ -99,30 +75,33 @@ namespace ProyectoBase
         {
             Program.frmCrearPost = new frmCrearPost();
             Program.frmCrearPost.Show();
-            //pnlFeed.Controls.Add(Program.con.CargarPost());
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pst.CargarPost();
         }
 
         private void LogoApp_Click(object sender, EventArgs e)
         {
-            Program.frmPerfil = new frmPerfil();
-            Program.frmPerfil.Show();
+            if (!Program.userid.Equals("Invitado")) {
+                frmPerfil frmPerfil = new frmPerfil();
+                u.cargarUsuario(Program.userid, frmPerfil);
+                frmPerfil.Show();
+            }
+            
         }
 
         private void lblUsuario_Click(object sender, EventArgs e)
         {
-            Program.frmPerfil = new frmPerfil();
-            Program.frmPerfil.Show();
+            if (!Program.userid.Equals("Invitado"))
+            {
+                frmPerfil frmPerfil = new frmPerfil();
+                u.cargarUsuario(Program.userid, frmPerfil);
+                frmPerfil.Show();
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Program.frmPerfil = new frmPerfil();
-            Program.frmPerfil.Show();
+            frmPerfil frmPerfil = new frmPerfil();
+            u.cargarUsuario(Program.userid, frmPerfil);
+            frmPerfil.Show();
         }
 
         private void frmPrincipal_Resize(object sender, EventArgs e)
@@ -133,7 +112,7 @@ namespace ProyectoBase
                 pnlInvitado.Visible = true;
                 lblUsuario.Text = Program.userid;
             }
-            pst.CargarPost();
+            pst.CargarPost("principal", null, null);
         }
 
         private void frmPrincipal_SizeChanged(object sender, EventArgs e)
@@ -144,7 +123,7 @@ namespace ProyectoBase
                 pnlInvitado.Visible = true;
                 lblUsuario.Text = Program.userid;
             }
-            pst.CargarPost();
+            pst.CargarPost("principal", null, null );
         }
 
         private void frmPrincipal_Activated(object sender, EventArgs e)

@@ -34,6 +34,7 @@ namespace BackOffice
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aplicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +58,7 @@ namespace BackOffice
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
@@ -72,6 +74,7 @@ namespace BackOffice
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.menuStrip1);
             this.splitContainer1.Size = new System.Drawing.Size(912, 409);
             this.splitContainer1.SplitterDistance = 25;
@@ -116,12 +119,24 @@ namespace BackOffice
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 25);
             this.guna2ControlBox1.TabIndex = 29;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(912, 359);
+            this.panel1.TabIndex = 1;
+            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(912, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -142,7 +157,7 @@ namespace BackOffice
             this.solicitudesToolStripMenuItem,
             this.registrosToolStripMenuItem});
             this.aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
-            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aplicacionesToolStripMenuItem.Text = "Aplicaciones";
             // 
             // solicitudesToolStripMenuItem
@@ -176,20 +191,23 @@ namespace BackOffice
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar Sesion";
+            this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 20;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.guna2BorderlessForm1.DragStartTransparencyValue = 1D;
             // 
             // guna2DragControl1
             // 
@@ -197,7 +215,7 @@ namespace BackOffice
             this.guna2DragControl1.DockIndicatorTransparencyValue = 1D;
             this.guna2DragControl1.DragStartTransparencyValue = 1D;
             this.guna2DragControl1.TargetControl = this.splitContainer1.Panel1;
-            this.guna2DragControl1.UseTransparentDrag = true;
+            this.guna2DragControl1.TransparentWhileDrag = false;
             // 
             // guna2Elipse1
             // 
@@ -249,6 +267,7 @@ namespace BackOffice
         private System.Windows.Forms.ToolStripMenuItem creacionCuentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrosToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

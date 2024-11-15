@@ -375,6 +375,7 @@ namespace ProyectoBase
             "Mujer",
             "Otro"});
             this.cbGen.Location = new System.Drawing.Point(5, 140);
+            this.cbGen.MaxDropDownItems = 3;
             this.cbGen.Name = "cbGen";
             this.cbGen.ShadowDecoration.BorderRadius = 10;
             this.cbGen.Size = new System.Drawing.Size(203, 36);

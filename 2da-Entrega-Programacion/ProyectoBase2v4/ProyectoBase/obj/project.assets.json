@@ -285,11 +285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
-      "projectName": "ProyectoBase",
-      "projectPath": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+      "projectUniqueName": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+      "projectName": "Cultrade",
+      "projectPath": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
       "packagesPath": "C:\\Users\\MannC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\obj\\",
+      "outputPath": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

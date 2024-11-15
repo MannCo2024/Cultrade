@@ -28,7 +28,7 @@ namespace ProyectoBase
         public static Post pst = new Post();
         public static object dump;
         public static Random rnd = new Random();
-        public static string userid;
+        public static string userid = "Invitado";
 
 
         public static string CrearString(int largo)

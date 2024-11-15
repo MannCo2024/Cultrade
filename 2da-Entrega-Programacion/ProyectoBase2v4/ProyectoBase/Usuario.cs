@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProyectoBase
 {
@@ -11,6 +13,7 @@ namespace ProyectoBase
     {
         ADODB.Connection cn = Program.cn;
         Conexion con = Program.con;
+        Post pst = Program.pst;
 
         public String ObtenerPais() {
             string info = new System.Net.WebClient().DownloadString("https://ipinfo.io");
@@ -45,6 +48,7 @@ namespace ProyectoBase
                     {
                         sql = $"CALL solicitudUsuario('{usu}', '{nom}', '{ape}', '{edad}', '{mail}', '{ObtenerPais()}', '{gen}', '{tel}', '{pass}');";
                         con.Ejecutar(sql);
+                        con.CCon();
                     }
                     else
                     {
@@ -108,5 +112,61 @@ namespace ProyectoBase
             
         }
 
+        public DataTable ObtenerPerfil(string usu) {
+            DataTable dt = new DataTable();
+            ADODB.Recordset rs;
+            Boolean invitado = false;
+            String sql;
+
+            sql = "SELECT * FROM verUsu where Usuario " + usu;
+            if (!con.CheckConn())
+            {
+                con.OpConn("PostLoader", "Xkjjk)923=!1f");
+                invitado = true;
+            }
+            rs = con.Ejecutar(sql);
+
+            for (int i = 0; i < rs.Fields.Count; i++)
+            {
+                dt.Columns.Add(rs.Fields[i].Name, typeof(string));
+            }
+
+            while (!rs.EOF)
+            {
+                DataRow row = dt.NewRow();
+                for (int i = 0; i < rs.Fields.Count; i++)
+                {
+                    row[i] = rs.Fields[i].Value;
+                }
+                dt.Rows.Add(row);
+                rs.MoveNext();
+            }
+            if (invitado)
+            {
+                con.CCon();
+                invitado = false;
+            }
+            return dt;
+        }
+
+        public void cargarUsuario(string usuario, frmPerfil perfil)
+        {
+            usuario = $"= '{usuario}'";
+
+            DataTable talba = ObtenerPerfil(usuario);
+            foreach (DataRow row in talba.Rows){
+                var ucPerfil = new ucPerfil();
+                ucPerfil.CargarUsu = (string)row["Usuario"];
+                ucPerfil.CargarNom = (string)row["Nombre"];
+                ucPerfil.CargarApe = (string)row["Apellido"];
+                ucPerfil.CargarEdad = (string)row["Edad"];
+                ucPerfil.CargarMail = (string)row["Mail"];
+                ucPerfil.CargarDesc = (string)row["Dcr"];
+
+                ucPerfil.Dock = DockStyle.Fill;
+                perfil.splitContainer1.Panel1.Controls.Add(ucPerfil);
+            }
+
+        }
     }
 }

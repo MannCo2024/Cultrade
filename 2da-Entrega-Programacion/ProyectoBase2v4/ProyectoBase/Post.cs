@@ -21,10 +21,10 @@ namespace ProyectoBase
             DataTable dt = new DataTable();
             ADODB.Recordset rs;
             String sql; 
-            if (post is null) { 
-                sql = "select * from verposts where Usuario " + usu;
+            if (post is null) {
+                sql = $"select * from verposts where Usuario {usu}";
             } else { 
-                    sql = "SELECT * from vercomentarios WHERE Post = '" + post + "'";
+                sql = $"SELECT * from vercomentarios WHERE Post = '{post}'";
             }
 
 
@@ -125,9 +125,24 @@ namespace ProyectoBase
             }
         }
 
-        public void CargarPost()
+        public void CargarPost(string qes, string usu2, frmPerfil perfil)
         {
-            Program.frmPrincipal.flowLayoutPanel1.Controls.Clear();
+            FlowLayoutPanel a;
+            switch (qes) {
+                case "principal":
+                    usu2 = "IS NOT NULL";
+                    a = Program.frmPrincipal.flowLayoutPanel1;
+                    break;
+                case "perfil":
+                    usu2 = $"= '{usu2}'";
+                    a = perfil.flowLayoutPanel1;
+                    break;
+                default:
+                    a = Program.frmPrincipal.flowLayoutPanel1;
+                    MessageBox.Show("ERROR!!!!!!");
+                    break;
+            }
+            a.Controls.Clear();
 
             string usu;
             string txt;
@@ -140,8 +155,7 @@ namespace ProyectoBase
                 con.OpConn("PostLoader", "Xkjjk)923=!1f");
                 invitado = true;
             }
-            DataTable talba = selectUC(null, "IS NOT NULL");
-            //selectUC("IS NOT NULL"); //obtiene los post de todos los usuarios, para un solo usuario usar ("= 'usuario'")
+            DataTable talba = selectUC(null, usu2);
             foreach (DataRow row in talba.Rows)
             {
                 usu = (string)row["Usuario"];
@@ -158,8 +172,8 @@ namespace ProyectoBase
                 ucPosts.CargarID = id;
                 ucPosts.cargarLikes = likes;
                 ucPosts.userLiked = liked;
-                ucPosts.Width = Program.frmPrincipal.flowLayoutPanel1.ClientSize.Width;
-                Program.frmPrincipal.flowLayoutPanel1.Controls.Add(ucPosts);
+                ucPosts.Width = a.ClientSize.Width;
+                a.Controls.Add(ucPosts);
             }
 
         }

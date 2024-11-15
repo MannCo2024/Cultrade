@@ -2,8 +2,8 @@
   "profiles": {
     "ProyectoBase": {
       "commandName": "Project",
-      "nativeDebugging": true,
-      "sqlDebugging": true
+      "nativeDebugging": false,
+      "sqlDebugging": false
     }
   }
 }

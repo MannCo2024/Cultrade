@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
+    <Compile Update="blfChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Comunidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,6 +38,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ucComentario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucMensaje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucPerfil.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ucPosts.cs">
