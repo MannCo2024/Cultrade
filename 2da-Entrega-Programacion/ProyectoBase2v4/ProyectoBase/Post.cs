@@ -102,10 +102,33 @@ namespace ProyectoBase
             ADODB.Recordset rs;
             String sql;
             sql = "SELECT * FROM likes WHERE Post = '" + post + "' AND Usuario = NombreUsuario();";
-                        ///MIRAR EL VIEW DE LIKES PORQUE ESTA MEDIO RARO:::
             if (!con.CheckConn())
             {
-                // MessageBox.Show("Conexion cerrada1 en IsLiked, CheckConn");
+                return false;
+            }
+            else
+            {
+                rs = con.Ejecutar(sql);
+
+                if (rs.EOF && rs.BOF)
+                {
+                    // Usuario no dio like
+                    return false;
+                }
+                else
+                {
+                    // Usuario dio like
+                    return true;
+                }
+            }
+        }
+
+        public Boolean isSaved(string post) {
+            ADODB.Recordset rs;
+            String sql;
+            sql = "SELECT * FROM verguardados WHERE Post = '" + post + "' AND GUsuario = NombreUsuario();";
+            if (!con.CheckConn())
+            {
                 return false;
             }
             else
@@ -150,6 +173,7 @@ namespace ProyectoBase
             string id;
             string likes;
             Boolean liked;
+            Boolean saved;
             if (!con.CheckConn()) {
 
                 con.OpConn("PostLoader", "Xkjjk)923=!1f");
@@ -164,6 +188,7 @@ namespace ProyectoBase
                 id = (string)row["Post"];
                 likes = SelectPostLikes(id);
                 liked = IsLiked(id);
+                saved = isSaved(id);
 
                 var ucPosts = new ucPosts();
                 ucPosts.cargarUsu = usu;
@@ -172,6 +197,7 @@ namespace ProyectoBase
                 ucPosts.CargarID = id;
                 ucPosts.cargarLikes = likes;
                 ucPosts.userLiked = liked;
+                ucPosts.userSaved = saved;
                 ucPosts.Width = a.ClientSize.Width;
                 a.Controls.Add(ucPosts);
             }
@@ -210,11 +236,33 @@ namespace ProyectoBase
                     sql = "CALL quitarLike('" + post + "')";
                 }
                 else sql = "CALL darLike('" + post +"')";
-                MessageBox.Show(sql);
                 con.Ejecutar(sql);
             }
         }
 
+
+        public void guardarPost(string post) {
+            string sql;
+            if (con.CheckConn())
+            {
+                if (isSaved(post))
+                { //Usuario ya guardo post, hay que quitarlo.
+                    sql = "CALL quitarGuardarPost('" + post + "')";
+                }
+                else sql = "CALL guardarPost('" + post + "')";
+                con.Ejecutar(sql);
+            }
+        }
+
+        public void compartirPost(string post)
+        {
+            string sql;
+            if (con.CheckConn())
+            {
+                sql = $"CALL compartirPost('{post}')";
+                con.Ejecutar(sql);
+            }
+        }
 
     }
     

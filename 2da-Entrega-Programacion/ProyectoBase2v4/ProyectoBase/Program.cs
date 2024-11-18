@@ -21,6 +21,7 @@ namespace ProyectoBase
         public static Notificaciones frmNotificaciones;
         public static frmPost frmPost;
         public static frmCrearPost frmCrearPost;
+        public static frmGuardados frmGuardados;
 
         public static ADODB.Connection cn = new ADODB.Connection();
         public static Conexion con = new Conexion();

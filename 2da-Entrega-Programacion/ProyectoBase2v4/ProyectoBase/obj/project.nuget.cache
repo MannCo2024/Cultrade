@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N/AZLXS1mQw=",
+  "dgSpecHash": "d4JUMBhjnFI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+  "projectFilePath": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MannC\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\MannC\\.nuget\\packages\\jsonserializer\\1.0.5\\jsonserializer.1.0.5.nupkg.sha512",

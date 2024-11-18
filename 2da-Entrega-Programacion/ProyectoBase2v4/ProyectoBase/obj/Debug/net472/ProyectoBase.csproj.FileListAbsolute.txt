@@ -202,9 +202,6 @@ C:\Users\Lab5\Downloads\BORRAAMEEEEEEEE\2da-Entrega-Programacion\2da-Entrega-Pro
 C:\Users\Lab5\Downloads\BORRAAMEEEEEEEE\2da-Entrega-Programacion\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\JsonToEntityClass.dll
 C:\Users\Lab5\Downloads\BORRAAMEEEEEEEE\2da-Entrega-Programacion\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Vedoo.VedooControls.dll
 C:\Users\Lab5\Downloads\BORRAAMEEEEEEEE\2da-Entrega-Programacion\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\Proyecto.47E9D9B8.Up2Date
-C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\ProyectoBase.exe.config
-C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\ProyectoBase.exe
-C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\ProyectoBase.pdb
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Guna.UI2.dll
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\JsonToEntityClass.dll
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Vedoo.VedooControls.dll
@@ -232,7 +229,13 @@ C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\Pr
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.csproj.CoreCompileInputs.cache
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.sourcelink.json
 C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\Proyecto.47E9D9B8.Up2Date
-C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.exe
-C:\Users\MannC\source\repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.pdb
 C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Newtonsoft.Json.dll
 C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.ucPerfil.resources
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Cultrade.exe.config
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Cultrade.exe
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\bin\Debug\net472\Cultrade.pdb
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.blfChat.resources
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.ucMensaje.resources
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\Cultrade.exe
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\Cultrade.pdb
+C:\Users\MannC\Source\Repos\Proyecto\2da-Entrega-Programacion\ProyectoBase2v4\ProyectoBase\obj\Debug\net472\ProyectoBase.frmGuardados.resources

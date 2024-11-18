@@ -64,6 +64,24 @@ namespace ProyectoBase
 
         private void aaa() {
             lblNomApeEdad.Text = $"{nom} {ape} - {edad} años";
+
+            if (CargarUsu == Program.userid) {
+                btnAAmigo.Visible = false;
+                btnAAmigo.Enabled = false;
+                btnEMsg.Visible = false;
+                btnEMsg.Enabled = false;
+                btnBlock.Visible = false;
+                btnBlock.Enabled = false;
+
+                btnGuardados.Visible = true;
+                btnGuardados.Enabled = true;
+            }
+        }
+
+        private void btnGuardados_Click(object sender, EventArgs e)
+        {
+            frmGuardados frmGuardados = new frmGuardados();
+            frmGuardados.Show();
         }
     }
 }

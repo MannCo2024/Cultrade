@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAAmigo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGuardados = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.rtbDesc = new System.Windows.Forms.RichTextBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBlock = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEMsg = new Guna.UI2.WinForms.Guna2Button();
             this.lblNomApeEdad = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblMail = new System.Windows.Forms.Label();
@@ -46,12 +46,12 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.guna2Button4);
+            this.guna2Panel1.Controls.Add(this.btnAAmigo);
+            this.guna2Panel1.Controls.Add(this.btnGuardados);
             this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel1.Controls.Add(this.rtbDesc);
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.btnBlock);
+            this.guna2Panel1.Controls.Add(this.btnEMsg);
             this.guna2Panel1.Controls.Add(this.lblNomApeEdad);
             this.guna2Panel1.Controls.Add(this.lblUsuario);
             this.guna2Panel1.Controls.Add(this.lblMail);
@@ -63,45 +63,46 @@
             this.guna2Panel1.Size = new System.Drawing.Size(702, 133);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // guna2Button1
+            // btnAAmigo
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = global::ProyectoBase.Properties.Resources.amigo;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(569, 6);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(130, 24);
-            this.guna2Button1.TabIndex = 75;
-            this.guna2Button1.Text = "Añadir amigo";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAAmigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAAmigo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAAmigo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAAmigo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAAmigo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAAmigo.FillColor = System.Drawing.Color.Transparent;
+            this.btnAAmigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAAmigo.ForeColor = System.Drawing.Color.Black;
+            this.btnAAmigo.Image = global::ProyectoBase.Properties.Resources.amigo;
+            this.btnAAmigo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAAmigo.Location = new System.Drawing.Point(569, 6);
+            this.btnAAmigo.Name = "btnAAmigo";
+            this.btnAAmigo.Size = new System.Drawing.Size(130, 24);
+            this.btnAAmigo.TabIndex = 75;
+            this.btnAAmigo.Text = "Añadir amigo";
+            this.btnAAmigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button4
+            // btnGuardados
             // 
-            this.guna2Button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Enabled = false;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Image = global::ProyectoBase.Properties.Resources.guardar;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Location = new System.Drawing.Point(569, 6);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(130, 24);
-            this.guna2Button4.TabIndex = 80;
-            this.guna2Button4.Text = "Guardados";
-            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.Visible = false;
+            this.btnGuardados.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardados.Enabled = false;
+            this.btnGuardados.FillColor = System.Drawing.Color.Transparent;
+            this.btnGuardados.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardados.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardados.Image = global::ProyectoBase.Properties.Resources.guardar;
+            this.btnGuardados.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGuardados.Location = new System.Drawing.Point(569, 6);
+            this.btnGuardados.Name = "btnGuardados";
+            this.btnGuardados.Size = new System.Drawing.Size(130, 24);
+            this.btnGuardados.TabIndex = 80;
+            this.btnGuardados.Text = "Guardados";
+            this.btnGuardados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGuardados.Visible = false;
+            this.btnGuardados.Click += new System.EventHandler(this.btnGuardados_Click);
             // 
             // guna2ImageButton1
             // 
@@ -135,43 +136,43 @@
             this.rtbDesc.TabIndex = 78;
             this.rtbDesc.Text = "";
             // 
-            // guna2Button3
+            // btnBlock
             // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Image = global::ProyectoBase.Properties.Resources.bloquear;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(569, 66);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(130, 24);
-            this.guna2Button3.TabIndex = 77;
-            this.guna2Button3.Text = "Bloquear";
-            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBlock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBlock.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBlock.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBlock.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBlock.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBlock.FillColor = System.Drawing.Color.Transparent;
+            this.btnBlock.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBlock.ForeColor = System.Drawing.Color.Black;
+            this.btnBlock.Image = global::ProyectoBase.Properties.Resources.bloquear;
+            this.btnBlock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBlock.Location = new System.Drawing.Point(569, 66);
+            this.btnBlock.Name = "btnBlock";
+            this.btnBlock.Size = new System.Drawing.Size(130, 24);
+            this.btnBlock.TabIndex = 77;
+            this.btnBlock.Text = "Bloquear";
+            this.btnBlock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button2
+            // btnEMsg
             // 
-            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Image = global::ProyectoBase.Properties.Resources.chat1;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(569, 36);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(130, 24);
-            this.guna2Button2.TabIndex = 76;
-            this.guna2Button2.Text = "Enviar mensaje";
-            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEMsg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEMsg.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEMsg.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEMsg.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEMsg.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEMsg.FillColor = System.Drawing.Color.Transparent;
+            this.btnEMsg.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEMsg.ForeColor = System.Drawing.Color.Black;
+            this.btnEMsg.Image = global::ProyectoBase.Properties.Resources.chat1;
+            this.btnEMsg.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEMsg.Location = new System.Drawing.Point(569, 36);
+            this.btnEMsg.Name = "btnEMsg";
+            this.btnEMsg.Size = new System.Drawing.Size(130, 24);
+            this.btnEMsg.TabIndex = 76;
+            this.btnEMsg.Text = "Enviar mensaje";
+            this.btnEMsg.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblNomApeEdad
             // 
@@ -238,11 +239,11 @@
         private Label lblUsuario;
         private Label lblMail;
         private PictureBox LogoApp;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnAAmigo;
+        private Guna.UI2.WinForms.Guna2Button btnBlock;
+        private Guna.UI2.WinForms.Guna2Button btnEMsg;
         private RichTextBox rtbDesc;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnGuardados;
     }
 }

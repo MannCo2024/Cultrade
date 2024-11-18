@@ -82,6 +82,7 @@ namespace ProyectoBase
             if (!Program.userid.Equals("Invitado")) {
                 frmPerfil frmPerfil = new frmPerfil();
                 u.cargarUsuario(Program.userid, frmPerfil);
+                pst.CargarPost("perfil", Program.userid, frmPerfil);
                 frmPerfil.Show();
             }
             
@@ -93,6 +94,7 @@ namespace ProyectoBase
             {
                 frmPerfil frmPerfil = new frmPerfil();
                 u.cargarUsuario(Program.userid, frmPerfil);
+                pst.CargarPost("perfil", Program.userid, frmPerfil);
                 frmPerfil.Show();
             }
         }
