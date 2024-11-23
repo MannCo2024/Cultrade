@@ -1,7 +1,0 @@
-C:\Users\MannC\Desktop\ProyectoBase.exe
-C:\Users\MannC\Desktop\ProyectoBase.exe.config
-C:\Users\MannC\Desktop\ProyectoBase.pdb
-C:\Users\MannC\Desktop\Guna.UI2.dll
-C:\Users\MannC\Desktop\JsonToEntityClass.dll
-C:\Users\MannC\Desktop\Newtonsoft.Json.dll
-C:\Users\MannC\Desktop\Vedoo.VedooControls.dll

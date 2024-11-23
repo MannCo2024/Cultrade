@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "ProyectoBase": {
-      "commandName": "Project",
-      "nativeDebugging": false,
-      "sqlDebugging": false
-    }
-  }
-}
