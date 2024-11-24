@@ -1,0 +1,425 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\uccomentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\uccomentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\uccomentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\uccomentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\proyectobase.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\proyectobase.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\blfchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\blfchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmchats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmchats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\ucchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\blfchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\blfchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\ucmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmchats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmchats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\ucperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\ucmensaje.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\ucmensaje.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmguardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmguardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|c:\\users\\oem\\desktop\\cultrade-master\\cultrade-master\\2da-entrega-programacion\\proyectobase2v4\\proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\proyectobase\\frmguardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07D932D1-9CBE-4C6C-8F5C-8975E6147865}|ProyectoBase\\ProyectoBase.csproj|solutionrelative:proyectobase\\frmguardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 186,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucComentario.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucComentario.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucComentario.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucComentario.cs",
+              "RelativeToolTip": "ProyectoBase\\ucComentario.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAASwA4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T23:21:45.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Usuario.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Usuario.cs",
+              "RelativeToolTip": "ProyectoBase\\Usuario.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowFQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T23:04:05.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ucChat.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucChat.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucChat.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucChat.cs",
+              "RelativeToolTip": "ProyectoBase\\ucChat.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:39:23.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ucChat.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucChat.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucChat.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucChat.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucChat.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:31:25.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Post.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Post.cs",
+              "RelativeToolTip": "ProyectoBase\\Post.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAASwCEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:35:37.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Conexion.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Conexion.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Conexion.cs",
+              "RelativeToolTip": "ProyectoBase\\Conexion.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T15:56:42.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBase\\frmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:59:43.537Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmPrincipal.cs",
+              "RelativeToolTip": "ProyectoBase\\frmPrincipal.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwGwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:59:44.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucPosts.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucPosts.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPosts.cs",
+              "RelativeToolTip": "ProyectoBase\\ucPosts.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAmwEgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:46:05.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucComentario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucComentario.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucComentario.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucComentario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBase\\ucComentario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:32:39.15Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "blfChat.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\blfChat.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\blfChat.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\blfChat.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\blfChat.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:44:19.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmChats.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmChats.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmChats.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmChats.cs",
+              "RelativeToolTip": "ProyectoBase\\frmChats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T15:38:58.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeToolTip": "ProyectoBase\\frmLogin.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:13:34.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "blfChat.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\blfChat.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\blfChat.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\blfChat.cs",
+              "RelativeToolTip": "ProyectoBase\\blfChat.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAcwEgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:40:21.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ucMensaje.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucMensaje.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:48:50.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ucMensaje.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucMensaje.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.cs",
+              "RelativeToolTip": "ProyectoBase\\ucMensaje.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAACcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:48:52.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ucMensaje.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucMensaje.Designer.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucMensaje.Designer.cs",
+              "RelativeToolTip": "ProyectoBase\\ucMensaje.Designer.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwDAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:15:38.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProyectoBase",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+              "RelativeDocumentMoniker": "ProyectoBase\\ProyectoBase.csproj",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+              "RelativeToolTip": "ProyectoBase\\ProyectoBase.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T15:10:26.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmGuardados.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmGuardados.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmGuardados.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmGuardados.cs",
+              "RelativeToolTip": "ProyectoBase\\frmGuardados.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:11:10.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmGuardados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmGuardados.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmGuardados.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmGuardados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmGuardados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:52:07.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ucPerfil.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPerfil.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucPerfil.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPerfil.cs",
+              "RelativeToolTip": "ProyectoBase\\ucPerfil.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAowIUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:23:53.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:14:43.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frmChats.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmChats.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\frmChats.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmChats.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\frmChats.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:09:18.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\Program.cs",
+              "ToolTip": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\Program.cs",
+              "RelativeToolTip": "ProyectoBase\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowCoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:42:51.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ucPerfil.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\oem\\Desktop\\Cultrade-master\\Cultrade-master\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPerfil.cs",
+              "RelativeDocumentMoniker": "ProyectoBase\\ucPerfil.cs",
+              "ToolTip": "C:\\Users\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPerfil.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\MannC\\source\\repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ucPerfil.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:18:24.134Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
