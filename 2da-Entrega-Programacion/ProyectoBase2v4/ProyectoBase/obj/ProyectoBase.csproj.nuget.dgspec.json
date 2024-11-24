@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+        "projectName": "Cultrade",
+        "projectPath": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\ProyectoBase.csproj",
+        "packagesPath": "C:\\Users\\MannC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MannC\\Source\\Repos\\Proyecto\\2da-Entrega-Programacion\\ProyectoBase2v4\\ProyectoBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MannC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Guna.UI2.WinForms": {
+              "target": "Package",
+              "version": "[2.0.4.6, )"
+            },
+            "JsonSerializer": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Vedoo.VedooControls": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

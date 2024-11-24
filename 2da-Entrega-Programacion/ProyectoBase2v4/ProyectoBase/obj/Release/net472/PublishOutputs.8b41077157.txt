@@ -1,0 +1,7 @@
+C:\Users\MannC\Desktop\Nueva carpeta\Cultrade.exe
+C:\Users\MannC\Desktop\Nueva carpeta\Cultrade.exe.config
+C:\Users\MannC\Desktop\Nueva carpeta\Cultrade.pdb
+C:\Users\MannC\Desktop\Nueva carpeta\Guna.UI2.dll
+C:\Users\MannC\Desktop\Nueva carpeta\JsonToEntityClass.dll
+C:\Users\MannC\Desktop\Nueva carpeta\Newtonsoft.Json.dll
+C:\Users\MannC\Desktop\Nueva carpeta\Vedoo.VedooControls.dll
